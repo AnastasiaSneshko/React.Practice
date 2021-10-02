@@ -1,6 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
-import Clicker from './components/Clicker/Clicker';
+import Clicker from './components/Clicker/clicker';
 
 class App extends Component {
   constructor(props){
