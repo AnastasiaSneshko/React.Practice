@@ -5,21 +5,22 @@ class Clicker extends Component{
   constructor(props){
     super(props);
     this.state = {
-      clickAmount: 0
+      clickAmount: 0,
+      step: 2
     };
   }
 
   nextStepClick = () => {
-    const{clickAmount} = this.state;
+    const{clickAmount, step} = this.state;
     this.setState({
-      clickAmount: clickAmount + 1
+      clickAmount: clickAmount + step
     });
   }
 
   prevStepClick = () => {
-    const{clickAmount} = this.state;
+    const{clickAmount, step} = this.state;
     this.setState({
-      clickAmount: clickAmount - 1
+      clickAmount: clickAmount - step
     });
   }
 
