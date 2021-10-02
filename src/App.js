@@ -1,5 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
+import Clicker from './components/Clicker/Clicker';
 
 class App extends Component {
   constructor(props){
@@ -7,7 +8,9 @@ class App extends Component {
     this.state = {}
   }  
   render(){
-    return <React.Fragment></React.Fragment>
+    return <React.Fragment>
+      <Clicker />
+    </React.Fragment>
   }
 }
 
